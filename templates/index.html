@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col-md-8">
+    <div>
+    </div>
+    <div>
+      <div>
+        <p ng-if="vm.loading" class="loading">Loading ...</p>
+
+        <div ng-repeat="song in vm.songs" class="song">
+
+          <img ng-src="{{song.artworkUrl60}}">
+          <h4>{{song.trackName}}</h4>
+          <p>Artist: {{song.artistName}}</p>
+          <button ng-if="!song.favorited" ng-click="vm.favoriteSong(song)">Favorite</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <!--<h4>Previous Searches</h4>
+    <div>
+      <p ng-if="!vm.previousSearches">No previous searches</p>
+      <ul>
+        <li ng-repeat="prevSearch in vm.previousSearches">
+
+        {{prevSearch}}
+        </li>
+      </ul>
+    </div> -->
+
+  <!--  <h4>Favorite Songs</h4>
+    <div>
+      <p>No favorited songs</p>
+      <ul>
+        <li ng-repeat="favorite in vm.favorites">
+          {{favorite.trackName}} by {{favorite.artistName}}
+        </li>
+      </ul>
+    </div>-->
+  </div>
+</div>

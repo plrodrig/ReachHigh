@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html ng-app="itunes">
+<head>
+	<title>iTunes Search</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="container">
+	<div class="page-header">
+		<h1>iTunes Search</h1>
+	</div>
+
+	<ul>
+		<li>
+			<a href="#/">Home</a>
+		</li>
+
+		<li>
+			<a href="#/search">Search</a>
+		</li>
+		<!--<li>
+			<a href='#/artists'>Artists</a>
+		</li>-->
+	</ul>
+
+	<div ng-view></div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+<script src="main.js"></script>
+<script src="controllers/songs-search.js"></script>
+<script src="controllers/artists.js"></script>
+<script src="controllers/artist.js"></script>
+<script src="controllers/artist-search.js"></script>
+<script src="controllers/education.js"></script>
+<script src="controllers/jobs.js"></script>
+<script src="services/itunes.js"></script>
+<script src="services/artist.js"></script>
+<script src="services/khanvideos.js"></script>
+<script src="services/glassdoor.js"></script>
+<script src="/directives/itunes-album.js"></script>
+
+
+</body>
+</html>
