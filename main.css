@@ -33,3 +33,14 @@ li{
 	list-style-type: none;
 
 }
+
+nav{
+	width: 100%;
+	padding-left: 50px;
+}
+
+.container{
+	width: 100%;
+	margin: 0 0;
+	padding: 0;
+}

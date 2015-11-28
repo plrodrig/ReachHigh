@@ -60,6 +60,16 @@ angular
 					}
 				}
 			})
+			.when('/careers/', {
+				templateUrl: '/templates/careers.html',
+				controller: 'CareersController',
+				controllerAs: 'vm',
+				resolve:{
+					assessment: function(Sokanu){
+						return Sokanu.findAllCareers();
+					}
+				}
+			})
 
 			.otherwise({
 				redirectTo: '/'

@@ -1,51 +1,79 @@
 <!DOCTYPE html>
-
 <html ng-app="itunes">
-<head>
-	<title>iTunes Search</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet" href="main.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-</head>
-<body>
+	<head>
+		<title>iTunes Search</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="container">
+			<nav class="navbar navbar-default navbar-static-top">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#/">Home</a>
+					</div>
+					<!--nav links-->
+					 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						 	 <ul class="nav navbar-nav">
+						    <li class="active"><a href="#/careers"> Careers <span class="sr-only">(current)</span></a></li>
+						 		<li><a href="#/education">Education </a></li>
+								<li><a href="#/jobs">Jobs </a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+										Dropdown <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#"> Action </a></li>
+										<li><a href="#"> Another Action </a> </li>
+									</ul>
+								</li>
+							</ul>
+					 </div> <!--End of .navbar-collapse-->
 
-<div class="container">
-	<div class="page-header">
-		<h1>iTunes Search</h1>
-	</div>
+				</div> <!--End of .container-fluid-->
 
-	<ul>
-		<li>
-			<a href="#/">Home</a>
-		</li>
+			</nav>
+			<div class="page-header">
+				<h1>iTunes Search</h1>
+			</div>
+			<ul>
 
-		<li>
-			<a href="#/search">Search</a>
-		</li>
-		<!--<li>
-			<a href='#/artists'>Artists</a>
-		</li>-->
-	</ul>
+				<li>
+					<a href="#/search">Search</a>
+				</li>
+				<!--<li>
+				<a href='#/artists'>Artists</a>
+			</li>-->
+		</ul>
 
-	<div ng-view></div>
+		<div ng-view></div>
 
-</div>
+	</div> <!-- end of container-->
 
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
-<script src="main.js"></script>
-<script src="controllers/songs-search.js"></script>
-<script src="controllers/artists.js"></script>
-<script src="controllers/artist.js"></script>
-<script src="controllers/artist-search.js"></script>
-<script src="controllers/education.js"></script>
-<script src="controllers/jobs.js"></script>
-<script src="services/itunes.js"></script>
-<script src="services/artist.js"></script>
-<script src="services/khanvideos.js"></script>
-<script src="services/glassdoor.js"></script>
-<script src="/directives/itunes-album.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+	<script src="main.js"></script>
+	<script src="controllers/songs-search.js"></script>
+	<script src="controllers/artists.js"></script>
+	<script src="controllers/artist.js"></script>
+	<script src="controllers/artist-search.js"></script>
+	<script src="controllers/education.js"></script>
+	<script src="controllers/jobs.js"></script>
+	<script src="controllers/careers.js"></script>
+	<script src="services/itunes.js"></script>
+	<script src="services/artist.js"></script>
+	<script src="services/khanvideos.js"></script>
+	<script src="services/glassdoor.js"></script>
+	<script src="services/sokanu.js"></script>
+	<script src="/directives/itunes-album.js"></script>
 
 
-</body>
+	</body>
 </html>
