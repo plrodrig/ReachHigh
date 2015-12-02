@@ -1,4 +1,26 @@
 <h1>Jobs<h1>
+
+You can also type other careers to see salary!
+<form class="form-inline" ng-submit="vm.search()">
+  <div class="form-group">
+    <div class="input-group">
+      <input type="search" class="form-control" placeholder="Job Title">
+    </div>
+  </div>
+  <input type="submit" value="Search" class="btn btn-primary">
+</form>
+  <ul>
+    Your picked career ( {{vm.jobs.jobTitle}} )
+    can lead to these paths:
+    <li ng-repeat="job in vm.jobs.results">
+        {{job.nextJobTitle}}
+        {{job.medianSalary}}
+    </li>
+  </ul>
+
+
+
+
 <a href='http://www.glassdoor.com/index.htm'> powered by
 <img src='https://www.glassdoor.com/static/img/api/glassdoor_logo_80.png' title='Job Search' />
 </a>
