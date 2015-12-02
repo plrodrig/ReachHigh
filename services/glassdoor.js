@@ -19,7 +19,7 @@ angular
    }//end findAllJobs function
  };
 });
-
+/*http://api.glassdoor.com/api/api.htm?t.p=48886&t.k=eedS6gVRSCm&userip=192.168.43.42&useragent=&format=json&v=1&action=jobs-stats&admLevelRequested=1&returnEmployers=true&returnJobTitles=true&city=los-angeles(/)
 /*
 
 http://api.glassdoor.com/api/api.htm?v=1&format=json&t.p=48886&t.k=eedS6gVRSCm&action=employers&q=pharmaceuticals&userip=192.168.43.42&useragent=Mozilla/%2F4.0
