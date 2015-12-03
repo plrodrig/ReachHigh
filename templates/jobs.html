@@ -4,18 +4,26 @@ You can also type other careers to see salary!
 <form class="form-inline" ng-submit="vm.findAllJobs()">
   <div class="form-group">
     <div class="input-group">
-      <input type="search"  ng-model="vm.artistSearch" class="form-control" placeholder="Job Title">
+      <input type="search"  ng-model="vm.jobSearch" class="form-control" placeholder="Job Title">
     </div>
   </div>
   <input type="submit" value="Search" class="btn btn-primary">
 </form>
   <ul>
-    Your picked career ( {{vm.jobs.jobTitle}} )
+  <!--  Your picked career ( {{vm.jobs.jobTitle}} )
+
+GIVE DEFAULT ACTION? SOKANU
+Maybe give options? IDK -->
+   Your picked career ( {{vm.pickedJobs.jobTitle}} )
     can lead to these paths:
-    <li ng-repeat="job in vm.jobs.results">
+    <li ng-repeat="job in vm.pickedJobs.results">
+          {{job.nextJobTitle}}
+          {{job.medianSalary}}
+    </li>
+  <!--  <li ng-repeat="job in vm.jobs.results">
         {{job.nextJobTitle}}
         {{job.medianSalary}}
-    </li>
+    </li> -->
   </ul>
 
 

@@ -17,8 +17,9 @@ angular
     /*Find's the user's specified job. This is different From Glassdoor.findAllJobs because
     that one is tied to Sokanu's Search Results*/
     vm.findAllJobs = function() {
-      Glassdoor.findASelectedJobPath(vm.artistSearch).then(function(songs) {
-        console.log("inside itunes", songs);
+      Glassdoor.findASelectedJobPath(vm.jobSearch).then(function(jobs) {
+        console.log("inside itunes", jobs);
+        vm.pickedJobs = jobs;
       });
     };
   });
