@@ -57,6 +57,9 @@ angular
 				resolve:{
 					jobs: function(Glassdoor){
 						return Glassdoor.findAllJobs();
+					},
+					selectedJobs: function(Glassdoor){
+						return Glassdoor.findASelectedJobPath();
 					}
 				}
 			})
