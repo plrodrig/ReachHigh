@@ -19,7 +19,7 @@ angular
      });
    },//end findAllJobs function
    findASelectedJobPath: function(jobTitle){
-     console.log("Val of jobtitle", jobTitle);
+  //FIX THIS   console.log("Val of jobtitle", jobTitle);
      //if(jobTitle === "" || jobTitle === 'Undefined'){
         //console.log("Not valid");
        //jobTitle = "software";

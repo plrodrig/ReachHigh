@@ -1,41 +1,35 @@
-<div class="row">
-  <div class="col-md-8">
-    <div>
-    </div>
-    <div>
-      <div>
-        <p ng-if="vm.loading" class="loading">Loading ...</p>
-
-        <div ng-repeat="song in vm.songs" class="song">
-
-          <img ng-src="{{song.artworkUrl60}}">
-          <h4>{{song.trackName}}</h4>
-          <p>Artist: {{song.artistName}}</p>
-          <button ng-if="!song.favorited" ng-click="vm.favoriteSong(song)">Favorite</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <!--<h4>Previous Searches</h4>
-    <div>
-      <p ng-if="!vm.previousSearches">No previous searches</p>
-      <ul>
-        <li ng-repeat="prevSearch in vm.previousSearches">
-
-        {{prevSearch}}
-        </li>
-      </ul>
-    </div> -->
-
-  <!--  <h4>Favorite Songs</h4>
-    <div>
-      <p>No favorited songs</p>
-      <ul>
-        <li ng-repeat="favorite in vm.favorites">
-          {{favorite.trackName}} by {{favorite.artistName}}
-        </li>
-      </ul>
-    </div>-->
-  </div>
-</div>
+<!-- Carousel ================================================== -->
+   <div id="myCarousel" class="carousel slide" data-ride="carousel">
+     <div class="carousel-inner" role="listbox">
+       <div class="item active">
+         <img class="first-slide" src="http://www.nasa.gov/sites/default/files/11572307115_98da7ab1de_k_0.jpg" alt="First slide">
+         <div class="container">
+           <div class="carousel-caption">
+           <h1>Choose a Career Right For You!</h1>
+             <p>Don’t know where to start in your career? Find out here!</p>
+                <p><a class="btn btn-lg btn-primary" ng-href="#/jobs" role="button">Start today</a></p>
+           </div>
+         </div>
+       </div>
+       <div class="item">
+         <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+         <div class="container">
+           <div class="carousel-caption">
+             <h1>Another example headline.</h1>
+             <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+             <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+           </div>
+         </div>
+       </div>
+       <div class="item">
+         <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+         <div class="container">
+           <div class="carousel-caption">
+             <h1>One more for good measure.</h1>
+             <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+             <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div><!-- /.carousel -->
