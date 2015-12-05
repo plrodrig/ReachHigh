@@ -3,12 +3,12 @@ angular
 	.config(function($routeProvider){
 		$routeProvider
 			.when('/', {
-				templateUrl: '/templates/index.html',
+				templateUrl: 'templates/index.html',
 				controller: 'SongsSearchController',
 				controllerAs: 'vm',
 			})
 			.when('/artists', {
-				templateUrl: '/templates/artists.html',
+				templateUrl: 'templates/artists.html',
 				controller: 'ArtistsController',
 				controllerAs: 'vm',
 				resolve:{
@@ -21,7 +21,7 @@ angular
 			})
 
 			.when('/artists/:artistId',{
-					templateUrl: '/templates/artist.html',
+					templateUrl: 'templates/artist.html',
 					controller: 'ArtistController',
 					controllerAs: 'vm',
 					resolve:{
@@ -32,7 +32,7 @@ angular
 					}
 				})
 			.when('/search/', {
-				templateUrl: '/templates/search.html',
+				templateUrl: 'templates/search.html',
 				controller: 'ArtistSearchController',
 				controllerAs: 'vm',
 				resolve:{
@@ -41,7 +41,7 @@ angular
 				}
 			})
 			.when('/education/', {
-				templateUrl: '/templates/education.html',
+				templateUrl: 'templates/education.html',
 				controller: 'EducationController',
 				controllerAs: 'vm',
 				resolve:{
@@ -51,7 +51,7 @@ angular
 				}
 			})
 			.when('/jobs/', {
-				templateUrl: '/templates/jobs.html',
+				templateUrl: 'templates/jobs.html',
 				controller: 'JobsController',
 				controllerAs: 'vm',
 				resolve:{
@@ -64,7 +64,7 @@ angular
 				}
 			})
 			.when('/careers/', {
-				templateUrl: '/templates/careers.html',
+				templateUrl: 'templates/careers.html',
 				controller: 'CareersController',
 				controllerAs: 'vm',
 				resolve:{
