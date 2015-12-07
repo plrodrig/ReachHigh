@@ -1,34 +1,27 @@
+<div id="container-jobs">
 <h1>Jobs<h1>
+  <h4>Type a career you're interested in and see related paths. For example, type in "software," and see results.</h4>
+  <div id="button">
+    <form class="form-inline" ng-submit="vm.findAllJobs()">
+      <div class="form-group">
+        <div class="input-group">
+          <input type="search"  ng-model="vm.jobSearch" class="form-control" placeholder="Job Title">
+        </div>
+      </div>
+      <input type="submit" value="Search" class="btn btn-primary">
+    </form>
+  </div>
+<span id="pickedCareer"><h4 ng-show="vm.pickedJobs">  Your picked career ( {{vm.pickedJobs.jobTitle}} )
+  can lead to these paths: </h4></span>
+  <div id = "item-row">
+    <div ng-repeat="job in vm.pickedJobs.results">
+      <div id="item-title">  {{job.nextJobTitle}} </div>
 
-You can also type other careers to see salary!
-<form class="form-inline" ng-submit="vm.findAllJobs()">
-  <div class="form-group">
-    <div class="input-group">
-      <input type="search"  ng-model="vm.jobSearch" class="form-control" placeholder="Job Title">
+      <div id="item-title2">{{job.medianSalary}} </div>
     </div>
   </div>
-  <input type="submit" value="Search" class="btn btn-primary">
-</form>
-  <ul>
-  <!--  Your picked career ( {{vm.jobs.jobTitle}} )
 
-GIVE DEFAULT ACTION? SOKANU
-Maybe give options? IDK -->
-   Your picked career ( {{vm.pickedJobs.jobTitle}} )
-    can lead to these paths:
-    <li ng-repeat="job in vm.pickedJobs.results">
-          {{job.nextJobTitle}}
-          {{job.medianSalary}}
-    </li>
-  <!--  <li ng-repeat="job in vm.jobs.results">
-        {{job.nextJobTitle}}
-        {{job.medianSalary}}
-    </li> -->
-  </ul>
-
-
-
-
-<a href='http://www.glassdoor.com/index.htm'> powered by
-<img src='https://www.glassdoor.com/static/img/api/glassdoor_logo_80.png' title='Job Search' />
-</a>
+  <a href='http://www.glassdoor.com/index.htm'> powered by
+    <img src='https://www.glassdoor.com/static/img/api/glassdoor_logo_80.png' title='Job Search' />
+  </a>
+</div>

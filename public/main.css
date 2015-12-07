@@ -45,3 +45,48 @@ nav{
 	padding: 0;
 
 }
+
+#container-jobs {
+	border-radius: 4px;
+	border: 3px solid #eee;
+	margin: auto;
+	width: 60%;
+	text-align: center;
+	background-color: #f8f8f8;
+}
+
+#container-jobs h1{
+	text-align: center;
+	font-size: 30px;
+	color: #333;
+	font-weight: : 600;
+}
+
+#pickedCareer {
+	color: blue;
+}
+#item-row {
+	display: block;
+	position: relative;
+	width: 100%;
+	border-bottom: 1px solid #fff;
+	background-color: #DFF5F7;
+}
+
+#item-row li {
+	text-align: left;
+}
+#item-title {
+	text-align: left;
+	padding: 0px;
+	margin: 0px:
+}
+
+#item-title2  {
+text-align: right;
+}
+
+#button{
+	margin: 0 auto;
+	width: 50%;
+}
