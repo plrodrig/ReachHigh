@@ -121,7 +121,13 @@ describe("glassdoor service", function(){
 
   it("findAllJobs() should return an array of jobs", function(){
     jobs.findAllJobs().then(function(allJobs){
-      expect(allJobs.length).toEqual(3);
+      expect(allJobs.length).toEqual(15);
+    });
+    $httpBackend.flush();
+  });
+  it("findASelectedJobPath() should return an array of related jobs of a specified job", function(){
+    jobs.findAllJobs('software').then(function(allJobs){
+      expect(allJobs.length).toEqual(15);
     });
     $httpBackend.flush();
   });

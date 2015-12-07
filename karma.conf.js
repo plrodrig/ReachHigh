@@ -20,7 +20,8 @@ module.exports = function(config) {
       'public/main.js',
       'public/**/*.js',
         'public/**/**/*.js',
-      'public/tests/**/*.js'
+      'public/tests/**/*.js',
+      'public/tests/**/*spec.js'
     ],
 
 
