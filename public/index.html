@@ -11,19 +11,11 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
 	<script src="main.js"></script>
 	<script src="directives/youtube.js"></script>
-	<script src="controllers/songs-search.js"></script>
-	<script src="controllers/artists.js"></script>
-	<script src="controllers/artist.js"></script>
-	<script src="controllers/artist-search.js"></script>
 	<script src="controllers/education.js"></script>
 	<script src="controllers/jobs.js"></script>
-	<script src="controllers/careers.js"></script>
-	<script src="services/itunes.js"></script>
-	<script src="services/artist.js"></script>
+	<script src="controllers/timeline.js"></script>
 	<script src="services/khanvideos.js"></script>
 	<script src="services/glassdoor.js"></script>
-	<script src="services/sokanu.js"></script>
-	<script src="directives/itunes-album.js"></script>
 
 	<script src="https://www.youtube.com/iframe_api"></script>
 
@@ -44,10 +36,10 @@
 					<!--nav links-->
 					 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						 	 <ul class="nav navbar-nav">
-						    <li class="active"><a href="#/careers"> Careers <span class="sr-only">(current)</span></a></li>
+						    <li><a href="#/timeline"> Timeline</a></li>
 						 		<li><a href="#/education">Education </a></li>
 								<li><a href="#/jobs">Jobs </a></li>
-								
+
 							</ul>
 					 </div> <!--End of .navbar-collapse-->
 
@@ -57,6 +49,8 @@
 			<!--End of Nav Bar-->
 
 		<div ng-view></div>
-
+		<footer>Made by Priscilla Rodriguez
+<span class="glyphicon glyphicon-apple" aria-hidden="true"></span>
+		</footer>
 	</body>
 </html>
