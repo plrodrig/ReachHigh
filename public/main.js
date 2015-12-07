@@ -48,6 +48,7 @@ angular
 					videos: function(KhanAcademy){
 						return KhanAcademy.findAllEduVideos();
 					}
+					
 				}
 			})
 			.when('/jobs/', {

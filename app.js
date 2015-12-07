@@ -1,11 +1,15 @@
 var express = require('express');
 var app = express();
+var youtube = require('./app/youtube');
 
 app.use(express.static(__dirname + '/public'));
 var port = process.env.PORT || 5000;
-//app.get('/', function(req, res){
-  //res.json([]);
-//});
+app.get('/youtube/search', function(req, res){
+  youtube.search('eminem', function(items){
+    res.json(items);
+  });
+});
+
 app.listen(port, function(){
 console.log('Listening on port', port);
 });

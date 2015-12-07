@@ -4,4 +4,6 @@ angular
     console.log(assessment);
     var vm =  this;
     vm.assessment = assessment;
+
+  
   });
