@@ -1,5 +1,5 @@
 angular
-	.module('itunes', ['ngRoute'])
+	.module('reachHigh', ['ngRoute'])
 	.config(function($routeProvider){
 		$routeProvider
 			.when('/', {
@@ -33,7 +33,7 @@ angular
 				templateUrl: 'templates/timeline.html',
 				controller: 'TimelineController',
 				controllerAs: 'vm',
-				
+
 			})
 
 			.otherwise({

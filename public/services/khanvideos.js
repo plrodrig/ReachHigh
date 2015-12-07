@@ -1,5 +1,5 @@
 angular
-  .module('itunes')
+  .module('reachHigh')
   .factory('KhanAcademy', function($http){
     return {
       findAllEduVideos: function(){

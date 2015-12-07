@@ -1,5 +1,5 @@
 angular
-  .module('itunes')
+  .module('reachHigh')
   .controller('JobsController', function(jobs, selectedJobs,  Glassdoor){
   //  console.log(jobs);
     var vm =  this;

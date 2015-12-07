@@ -1,5 +1,5 @@
 angular
-.module('itunes')
+.module('reachHigh')
 .directive('youtube', function($window, $rootScope) {
   return {
     restrict: "E",

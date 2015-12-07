@@ -1,5 +1,5 @@
 angular
-  .module('itunes')
+  .module('reachHigh')
   .controller('EducationController', function($scope, $window, $rootScope, videos){
     console.log("this be videos", videos);
     var vm = this;

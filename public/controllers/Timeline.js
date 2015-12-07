@@ -1,5 +1,5 @@
 angular
-  .module('itunes')
+  .module('reachHigh')
   .controller('TimelineController', function(){
     var vm =  this;
 
