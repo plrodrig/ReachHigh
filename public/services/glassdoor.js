@@ -3,7 +3,7 @@ angular
  .factory('Glassdoor', function($http) {
  return {
    findAllJobs: function() {
-     var base = 'http://api.glassdoor.com/api/api.htm?';
+     var base = 'https://api.glassdoor.com/api/api.htm?';
      var ip ='192.168.43.42';
      var tp = 48886;
      var tk = 'eedS6gVRSCm';
@@ -16,7 +16,7 @@ angular
      });
    },
    findASelectedJobPath: function(jobTitle){
-     var base = 'http://api.glassdoor.com/api/api.htm?';
+     var base = 'https://api.glassdoor.com/api/api.htm?';
      var ip ='192.168.43.42';
      var tp = 48886;
      var tk = 'eedS6gVRSCm';
