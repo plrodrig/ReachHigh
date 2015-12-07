@@ -1,13 +1,15 @@
+<div id="container-center">
 <h1>Education<h1>
   <div id="player"></div>
   <youtube width="640" height="390" videoId="HyRifmrMJ70"></youtube>
-
   <ul>
-    <li ng-repeat="video in vm.videos">
+    <li id="results-row" ng-repeat="video in vm.videos">
       <a videoId = {{video.youtube_id}} ng-click="test(video.youtube_id)" href="">
+        <img ng-src="{{video.image_url}}" alt="{{video.translated_title}}" height="100" width="100"/>
         {{video.translated_title}}
       </a>
     </li>
   </ul>
+</div>
 
 <!--If clicked, then injected into videoID-->
