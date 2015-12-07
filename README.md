@@ -22,6 +22,6 @@ AngularJS, BootStrap, HTML5, CSS3. This was tested using Karma and Jasmine.
 
 #Demo
 Here is a link to the project:
-
+http://intense-ocean-8598.herokuapp.com/#/
 
 [![Build Status](https://travis-ci.org/plrodrig/ReachHigh.svg)](https://travis-ci.org/plrodrig/ReachHigh)
