@@ -6,6 +6,7 @@ This app is meant to be a mobile solution to improve access to information about
 help students navigate education and career paths, and increase the capacity of career counselors to serve students.
 This app integrates tools to offer users accessible information on occupations, and education options.  
 
+Note* Must use HTTPS for app to work.
 #Features
 - Able to search for jobs and associated salaries
 - Able to hit up Khan Academy API for college-related videos
